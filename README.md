@@ -1,14 +1,11 @@
-# kubernetes-helm-platform
+# Kubernetes Helm Platform
 
-Azure portfolio repository for enterprise architecture, cloud transformation, and platform engineering.
+This repository delivers reusable Helm chart patterns for AKS and Kubernetes workloads, enabling repeatable deployment and platform consistency.
 
-## Scope
-
-- Azure solution architecture
-- Cloud migration and landing-zone design
-- Platform engineering, GitOps, and Kubernetes
-- Security, governance, and DevSecOps
-
-## Purpose
-
-This repository is intended as a reusable reference and portfolio asset for enterprise Azure delivery.
+```mermaid
+flowchart TD
+    A[Helm Values] --> B[Release]
+    B --> C[Deployment]
+    C --> D[Service]
+    C --> E[Ingress]
+```
